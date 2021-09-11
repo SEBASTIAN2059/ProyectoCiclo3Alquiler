@@ -1,8 +1,12 @@
 header{
+    display: flex;
     background-color: black;
     color: rgb(255, 255, 255);
 }
-.buttons_1{
-    width: 20%;
+#div_group{
+    margin-left: 25%;
+    width: 50%;
     height: 15%;
+    display:flex;
+    background-color: blue;
 }
