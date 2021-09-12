@@ -5,27 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquilarte - Actualizar</title>
-    <!--<link href="CSS/update.css" rel="stylesheet" type="text/css">-->
+    <link href="CSS/update.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
-        <div id="title">
-            <h3>
+        <div id="page_title">
+            <h3 id="title">
                 ALQUILARTE
             </h3>
         </div>
-        <div id="div_group">
-            <ul>
-                <li><a class="item" href="alquiler.html" target="_self" >INICIO</a></li>
-                <li><a class="item" href="alquiler.html" target="_self" >REGISTRO</a></li>
-                <li><a class="item" href="update.html" target="_self" >ACTUALIZACION</a></li>
-                <li><a class="item" href="alquiler.html" target="_self" >ALQUILER</a></li>
-                <li><a class="item" href="alquiler.html" target="_self" >DEVOLUCION</a></li>
-            </ul>
+        <div id="options">
+                <li class="item"><a class="option" href="empty.html" target="_self" >INICIO</a></li>
+                <li class="item"><a class="option" href="alquiler.html" target="_self" >REGISTRO</a></li>
+                <li class="item"><a class="option" href="empty.html" target="_self" >ACTUALIZACION</a></li>
+                <li class="item"><a class="option" href="alquiler.html" target="_self" >ALQUILER</a></li>
+                <li class="item"><a class="option" href="empty.html" target="_self" >DEVOLUCION</a></li>
         </div>
-        <div class="v_group">
+        <div id="user">
             <ul>
-                <li><a class="item" href="alquiler.html" target="_self" >USUARIO</a></li>
+                <li class="item"><a class="option" href="empty.html" target="_self" >USUARIO</a></li>
             </ul>
         </div>
     </header>
@@ -36,7 +34,7 @@
         <div>
             Tipo de vehiculo
             <select name="vehicle_type" id="">
-                <option value="None"></option>
+                <option value="None">Seleccione...</option>
                 <option value="Type_1">opcion 1</option>
                 <option value="Type_2">opcion 2</option>
                 <option value="Type_3">opcion 3</option>
@@ -46,7 +44,7 @@
         <div>
             Transmision
             <select name="vehicle_transmision" id="">
-                <option value="None"></option>
+                <option value="None">Seleccione...</option>
                 <option value="Type_1">opcion 1</option>
                 <option value="Type_2">opcion 2</option>
                 <option value="Type_3">opcion 3</option>
@@ -56,7 +54,7 @@
         <div>
             Puertas
             <select name="vehicle_doors" id="">
-                <option value="None"></option>
+                <option value="None">Seleccione...</option>
                 <option value="Type_1">opcion 1</option>
                 <option value="Type_2">opcion 2</option>
                 <option value="Type_3">opcion 3</option>
@@ -66,7 +64,7 @@
         <div>
             Puestos
             <select name="vehicle_seat" id="">
-                <option value="None"></option>
+                <option value="None">Seleccione...</option>
                 <option value="Type_1">opcion 1</option>
                 <option value="Type_2">opcion 2</option>
                 <option value="Type_3">opcion 3</option>
