@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquilarte - Actualizar</title>
-    <link href="CSS/update.css" rel="stylesheet" type="text/css">
+    <!--<link href="CSS/update.css" rel="stylesheet" type="text/css">-->
 </head>
 <body>
     <header>
@@ -27,68 +27,63 @@
             </ul>
         </div>
     </header>
-    <div>
-        <h3>
-            ACTUALIZACION DE VEHICULO A LA BASE DE DATOS DEL SISTEMA
-        </h3>
+    <main>
         <div>
-            Tipo de vehiculo
-            <select name="vehicle_type" id="">
-                <option value="None">Seleccione...</option>
-                <option value="Type_1">opcion 1</option>
-                <option value="Type_2">opcion 2</option>
-                <option value="Type_3">opcion 3</option>
-                <option value="Type_4">opcion 4</option>
-            </select>
+            <h3 id="title_menu">
+                ACTUALIZACION DE VEHICULO A LA BASE DE DATOS DEL SISTEMA
+            </h3>
+            <div class="menu">
+                <div id="col_1">
+                    Tipo de vehiculo
+                    <select name="vehicle_type" id="">
+                        <option value="None">Seleccione...</option>
+                        <option value="Type_1">opcion 1</option>
+                        <option value="Type_2">opcion 2</option>
+                        <option value="Type_3">opcion 3</option>
+                        <option value="Type_4">opcion 4</option>
+                    </select>
+                    Transmision
+                    <select name="vehicle_transmision" id="">
+                        <option value="None">Seleccione...</option>
+                        <option value="Type_1">opcion 1</option>
+                        <option value="Type_2">opcion 2</option>
+                        <option value="Type_3">opcion 3</option>
+                        <option value="Type_4">opcion 4</option>
+                    </select>
+                    Puertas
+                    <select name="vehicle_doors" id="">
+                        <option value="None">Seleccione...</option>
+                        <option value="Type_1">opcion 1</option>
+                        <option value="Type_2">opcion 2</option>
+                        <option value="Type_3">opcion 3</option>
+                        <option value="Type_4">opcion 4</option>
+                    </select>
+                    Puestos
+                    <select name="vehicle_seat" id="">
+                        <option value="None">Seleccione...</option>
+                        <option value="Type_1">opcion 1</option>
+                        <option value="Type_2">opcion 2</option>
+                        <option value="Type_3">opcion 3</option>
+                        <option value="Type_4">opcion 4</option>
+                    </select>
+                </div>
+                <div id="col_2">
+                    <label>Marca</label>
+                    <input type="text">
+
+                    <label>Placa</label>
+                    <input type="text">
+                    
+                    <label>Modelo</label>
+                    <input type="text">
+
+                    <label>Aire acondicionado</label>
+                    <input type="radio" name="air" value="0">Si
+                    <input type="radio" name="air" value="1">No
+                </div>
+            </div>
         </div>
-        <div>
-            Transmision
-            <select name="vehicle_transmision" id="">
-                <option value="None">Seleccione...</option>
-                <option value="Type_1">opcion 1</option>
-                <option value="Type_2">opcion 2</option>
-                <option value="Type_3">opcion 3</option>
-                <option value="Type_4">opcion 4</option>
-            </select>
-        </div>
-        <div>
-            Puertas
-            <select name="vehicle_doors" id="">
-                <option value="None">Seleccione...</option>
-                <option value="Type_1">opcion 1</option>
-                <option value="Type_2">opcion 2</option>
-                <option value="Type_3">opcion 3</option>
-                <option value="Type_4">opcion 4</option>
-            </select>
-        </div>
-        <div>
-            Puestos
-            <select name="vehicle_seat" id="">
-                <option value="None">Seleccione...</option>
-                <option value="Type_1">opcion 1</option>
-                <option value="Type_2">opcion 2</option>
-                <option value="Type_3">opcion 3</option>
-                <option value="Type_4">opcion 4</option>
-            </select>
-        </div>
-        <div>
-            Marca
-            <input type="text">
-        </div>
-        <div>
-            Placa
-            <input type="text">
-        </div>
-        <div>
-            Modelo
-            <input type="text">
-        </div>
-        <div>
-            Aire acondicionado
-            <input type="radio" name="air" value="0">Si
-            <input type="radio" name="air" value="1">No
-        </div>
-    </div>
+    </main>
     <footer>
             Divi
     </footer>

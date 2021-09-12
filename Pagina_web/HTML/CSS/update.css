@@ -26,3 +26,19 @@ header{
     width: 10%;
     height: 15%;
 }
+main{
+    margin: 0% auto;
+    width: 95%;
+    height: 80%;
+    background-color: rgb(212, 212, 212);
+}
+#title_menu{
+    text-align: center;
+}
+.menu{
+    display: flex;
+}
+#col_1, #col_2{
+    width: 10%;
+    display:inline-block;
+}
