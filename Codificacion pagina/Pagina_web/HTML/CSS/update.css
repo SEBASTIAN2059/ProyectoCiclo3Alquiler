@@ -37,8 +37,33 @@ main{
 }
 .menu{
     display: flex;
+    margin: 0% auto;
+    width: 95%;
+    height: 80%;
+    background-color: rgb(160, 79, 79);
 }
-#col_1, #col_2{
-    width: 10%;
+.select{
+    background-color: lawngreen;
+    width: 90%;
+    height: 7%;
+    margin-bottom: 15%;
+}
+#col_1{
+    text-align: center;
+    margin: 7%;
+    width: 15%;
+    display:inline-block;
+}
+#col_2{
+    text-align:center;
+    margin: 7%;
+    width: 12%;
+    display:inline-block;
+}
+
+#col_3{
+    text-align:center;
+    margin: 10%;
+    width: 21%;
     display:inline-block;
 }
