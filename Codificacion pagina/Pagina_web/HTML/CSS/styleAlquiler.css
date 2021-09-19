@@ -1,0 +1,12 @@
+/*Declaracion de variables*/
+:root {
+  --color-negro: #000000;
+}
+
+body {
+  margin: 0;
+}
+/*Encabezado de la pagina web*/
+.head {
+  background: var(--color-negro);
+}
