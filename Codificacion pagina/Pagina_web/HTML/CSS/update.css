@@ -82,16 +82,19 @@ main{
     /*background-color: rgb(160, 79, 79);*/
 }
 #col_1{
+    /*background-color: rgb(0, 255, 221);*/
     text-align: center;
-    margin: 7%;
+    margin: 6%;
     margin-top: 1%;
-    width: 15%;
+    width: 16%;
     display:inline-block;
 }
 #col_2{
-    text-align:center;
-    margin: 7%;
-    width: 12%;
+    /*background-color: rgb(0, 255, 221);*/
+    text-align: center;
+    margin: 6%;
+    margin-top: 1%;
+    width: 16%;
     display:inline-block;
 }
 
@@ -156,4 +159,26 @@ select{
     border-left: var(--size_w) solid transparent;
     border-right: var(--size_w) solid transparent;
     border-top: var(--size_h) solid rgba(0, 170, 212, 0.5);
+}
+/*-----INPUT-----*/
+.text_input{
+    font-size: 0.9rem;
+    background-color: white;
+    outline: none;
+    border: 1px solid gray;
+    width: 13em;
+    height: 1.7em;
+    color: black;
+}
+.text_input:hover{
+    background-color: white;
+    outline: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+}
+
+.text_input:focus{
+    outline: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
 }
