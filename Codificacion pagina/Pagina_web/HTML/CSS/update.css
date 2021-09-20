@@ -68,7 +68,7 @@ main{
     margin: 0% auto;
     width: 95%;
     height: 80%;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(231, 231, 231);
 }
 #title_menu{
     text-align: center;
@@ -118,10 +118,17 @@ select{
 }
 .custom_select{
     /*background-color: seagreen;*/
-    border: 1px solid black;
+    border: 1px solid gray;
     position: relative;
     width: 13em;
     height: 1.7em;
+}
+.custom_select:hover{
+    border: 1px solid black;
+    outline: 1px solid black;
+    position: relative;
+    /*width: 13em;
+    height: 1.7em;*/
 }
 .custom_arrow{
     position: absolute;
