@@ -1,6 +1,7 @@
 /*Declaracion de variables*/
 :root {
   --color-negro: #000000;
+  --color-gris: #707070;
 }
 
 body {
@@ -25,14 +26,15 @@ header {
 }
 
 #options {
-  margin-left: 5%;
+  margin-left: 10%;
   white-space: nowrap;
-  width: 40%;
+  width: 50%;
   height: 15%;
   display: flex;
 }
 .item {
   list-style: none;
+  margin-top: 2%;
 }
 #a_user {
   margin-left: 10%;
@@ -64,3 +66,16 @@ header {
 }
 
 /*----SECTION----*/
+
+/*----FILTER----*/
+#section-title {
+  text-align: center;
+}
+#catalogo {
+  display: flex;
+  justify-content: center;
+}
+.filtro {
+  border: 1px solid var(--color-gris);
+  padding: 1% 5%;
+}

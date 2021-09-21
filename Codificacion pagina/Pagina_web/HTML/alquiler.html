@@ -18,7 +18,7 @@
           <a class="custom_a" href="#" target="_self">REGISTRO VEHICULO</a>
         </li>
         <li class="item">
-          <a class="custom_a" href="#" target="_self">
+          <a class="custom_a" href="update.html" target="_self">
             ACTUALIZACION VEHICULO
           </a>
         </li>
@@ -35,16 +35,24 @@
     </header>
 
     <div class="seccion">
-      <div class="seccion-title">
+      <div id="section-title">
         <h1>CATALOGO DE VEHICULOS EN ALQUILER</h1>
       </div>
-      <div class="filtro">
-        <div class="filtro-inicio">Filtrar</div>
-        <div class="filtro-tipo">Tipo</div>
-        <div class="filtro-marca">Marca</div>
-        <div class="filtro-modelo">Modelo</div>
-        <div class="filtro-trans">Transmisión</div>
-        <div class="filtro-puestros">Puestos</div>
+      <div id="catalogo">
+        <div class="filtro inicio">Filtrar</div>
+        <div class="filtro tipo">
+          <select name="filtro-tipo" id="filtro-tipo">
+            <option selected>Tipo</option>
+            <option value="1">opcion1</option>
+            <option value="2">opcion2</option>
+            <option value="3">opcion3</option>
+            <option value="4">opcion4</option>
+          </select>
+        </div>
+        <div class="filtro marca">Marca</div>
+        <div class="filtro modelo">Modelo</div>
+        <div class="filtro trans">Transmisión</div>
+        <div class="filtro puestros">Puestos</div>
       </div>
 
       <div class="card">
