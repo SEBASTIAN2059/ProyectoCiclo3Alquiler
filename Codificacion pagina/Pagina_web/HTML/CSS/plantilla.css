@@ -109,8 +109,8 @@
         border-bottom: 4px solid black;
     }
     .navigation ul li #user{
-        margin-right: 1em;
-        margin-left: 2.0em;
+        margin-right: 0.5em;
+        margin-left: 2em;
     }
     .navigation ul li a:hover{
         background-color: rgb(0, 15, 15);
