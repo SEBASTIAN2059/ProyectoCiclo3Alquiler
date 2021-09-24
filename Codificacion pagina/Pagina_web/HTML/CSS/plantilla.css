@@ -109,7 +109,7 @@
         border-bottom: 4px solid black;
     }
     .navigation ul li #user{
-        margin-right: 1em;
+        margin-right: 0.5em;
         margin-left: 2em;
     }
     .navigation ul li a:hover{
