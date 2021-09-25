@@ -84,7 +84,7 @@
     .title{
         font-size: 3em;
         font-weight: bold;
-        padding-left: 1.5em;
+        padding-left: 1.0em;
         padding-right: 0.5em;
     }
     .title-nav-container{
@@ -109,8 +109,8 @@
         border-bottom: 4px solid black;
     }
     .navigation ul li #user{
-        margin-right: 1em;
-        margin-left: 2.0em;
+        margin-right: 0.5em;
+        margin-left: 2em;
     }
     .navigation ul li a:hover{
         background-color: rgb(0, 15, 15);
@@ -162,6 +162,7 @@
         justify-content: space-between;
     }
     .main .container .find .find-input{
+        display: flex;
         width: 95%;
     }
     .main .container .find label{
