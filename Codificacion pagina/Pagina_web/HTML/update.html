@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquilarte - Actualizar</title>
-    <link href="CSS/update.css" rel="stylesheet" type="text/css">
+    <!--<link href="CSS/update.css" rel="stylesheet" type="text/css">-->
 </head>
 <body>
     
@@ -22,83 +22,60 @@
                 <li class="item" id="a_user"><a class="custom_a" href="#" target="_self" >USUARIO</a></li>
         </div>
     </header>
-    <main>
-        <div>
-            <h3 id="title_menu">
-                ACTUALIZACION DE VEHICULO A LA BASE DE DATOS DEL SISTEMA
-            </h3>
-            <form action="">
-                <div class="menu">
-                    <div id="col_1">
-                        <div class="spacing_top">Tipo de vehiculo</div>
-                        <div class="custom_select">
-                            <select name="vehicle_type">
-                                <option value="None">Seleccione...</option>
-                                <option value="Type_1">opcion 1</option>
-                                <option value="Type_2">opcion 2</option>
-                                <option value="Type_3">opcion 3</option>
-                                <option value="Type_4">opcion 4</option>
-                            </select>
-                            <span class="custom_arrow"></span>
-                        </div>
-                        <div class="spacing_top">Transmision</div>
-                        <div class="custom_select">
-                            <select name="vehicle_transmision">
-                                <option value="None">Seleccione...</option>
-                                <option value="Type_1">opcion 1</option>
-                                <option value="Type_2">opcion 2</option>
-                                <option value="Type_3">opcion 3</option>
-                                <option value="Type_4">opcion 4</option>
-                            </select>
-                            <span class="custom_arrow"></span>
-                        </div>
-                        <div class="spacing_top">Puertas</div>
-                        <div class="custom_select">
-                            <select name="vehicle_doors">
-                                <option value="None">Seleccione...</option>
-                                <option value="Type_1">opcion 1</option>
-                                <option value="Type_2">opcion 2</option>
-                                <option value="Type_3">opcion 3</option>
-                                <option value="Type_4">opcion 4</option>
-                            </select>
-                            <span class="custom_arrow"></span>
-                        </div>
-                        <div class="spacing_top">Puestos</div>
-                        <div class="custom_select">
-                            <select name="vehicle_seat">
-                                <option value="None">Seleccione...</option>
-                                <option value="Type_1">opcion 1</option>
-                                <option value="Type_2">opcion 2</option>
-                                <option value="Type_3">opcion 3</option>
-                                <option value="Type_4">opcion 4</option>
-                            </select>
-                            <span class="custom_arrow"></span>
-                        </div>
+    <div class="content">
+        <h3 id="title_menu">
+            ACTUALIZACION DE VEHICULO A LA BASE DE DATOS DEL SISTEMA
+        </h3>
+        <form action="">
+            <div class="menu">
+                <div id="col_1">
+                    <div class="spacing_top">Tipo de vehiculo</div>
+                    <div class="custom_select">
+                        <select name="vehicle_type">
+                            <option value="None">Seleccione...</option>
+                            <option value="Type_1">opcion 1</option>
+                            <option value="Type_2">opcion 2</option>
+                            <option value="Type_3">opcion 3</option>
+                            <option value="Type_4">opcion 4</option>
+                        </select>
+                        <span class="custom_arrow"></span>
                     </div>
-                    <div id="col_2">
-                        <div class="spacing_top">Marca</div>
-                            <input class="text_input" type="text">
-
-                        <div class="spacing_top">Placa</div>
-                            <input class="text_input" type="text">
-                        
-                        <div class="spacing_top">Modelo</div>
-                            <input class="text_input" type="text">
-
-                        <div class="spacing_top">Aire acondicionado</div><br>
-                        <input type="radio" name="air" value="0">Si <br>
-                        <input type="radio" name="air" value="1">No
+                    <div class="spacing_top">Puertas</div>
+                    <div class="custom_select">
+                        <select name="vehicle_doors">
+                            <option value="None">Seleccione...</option>
+                            <option value="Type_1">opcion 1</option>
+                            <option value="Type_2">opcion 2</option>
+                            <option value="Type_3">opcion 3</option>
+                            <option value="Type_4">opcion 4</option>
+                        </select>
+                        <span class="custom_arrow"></span>
                     </div>
-                    <div id="col_3">
-                        <div>
-                            <input type="image">
-                        </div>
-                        <button>ACTUALIZAR</button>
+                    <div class="spacing_top">Puestos</div>
+                    <div class="custom_select">
+                        <select name="vehicle_seat">
+                            <option value="None">Seleccione...</option>
+                            <option value="Type_1">opcion 1</option>
+                            <option value="Type_2">opcion 2</option>
+                            <option value="Type_3">opcion 3</option>
+                            <option value="Type_4">opcion 4</option>
+                        </select>
+                        <span class="custom_arrow"></span>
                     </div>
                 </div>
-            </form>
-        </div>
-    </main>
+                <div id="col_2">
+                    <div class="spacing_top">Placa</div>
+                        <input class="text_input" type="text">
+                    
+                    <div class="spacing_top">Modelo</div>
+                        <input class="text_input" type="text">
+
+                    <div class="spacing_top"></div>
+                        <input type="button" value="ACTUALIZAR">
+                </div>
+            </div>
+        </form>
+    </div>
     <script src="JS/update.js"></script>
     <footer>
             Divi
