@@ -198,14 +198,14 @@
         margin-top: 2em;
         width: 95%;
         border-collapse: collapse;
-        border: 1px solid black;
+        border: 1px solid gray;
     }
     .main .container .table th{
-        border: 1px solid black;
+        border: 1px solid gray;
 
     }
     .main .container .table td{
-        border-right: 1px solid black;
+        border-right: 1px solid gray;
         text-align: center;
         padding-top: 1em;
         padding-bottom: 0.3em;
