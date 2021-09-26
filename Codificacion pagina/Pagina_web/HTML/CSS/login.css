@@ -1,29 +1,32 @@
 /* efectos por defecto */
-body {
-    font-family: 'Overpass', sans-serif;
-    font-weight: normal;
-    font-size: 100%;
-    color: #1b262c;
+body{
     margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagenes/fondo_difuminado.jpg);
 }
 
 /*Encabezado de la pagina web*/
-header {
-    display: flex;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 100%;
+.header{
     background-color: black;
     color: rgb(255, 255, 255);
-  }
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
 
-  #page_title {
+.title{
     font-size: 3em;
     font-weight: bold;
-    width: 30%;
-    height: 15%;
-    text-align: center;
-  }
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+}
+.title-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* efectos para el contenedor de pantalla completa */
 #contenedor {
@@ -38,7 +41,7 @@ header {
     width: 100%;
     height: 100%;
     
-    background-image: url(../imagenes/fondo_difuminado.jpg);
+    background-image: url(../Images/fondo_difuminado.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -69,6 +72,42 @@ header {
     
     padding: 30px;
     box-sizing: border-box;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    transition: all 0.3s;
+    padding: 1rem;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    border-bottom: 4px solid black;
+}
+.navigation ul li #user{
+    margin-right: 0.5em;
+    margin-left: 2em;
+}
+
+.navigation ul li a:hover{
+    background-color: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*border-radius: 20px;*/
+}
+.navigation ul li a:focus{
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* formulario de login */
@@ -106,7 +145,7 @@ header {
 #login input {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
-    color: #1b262c;
+    color: #ebf0f3;
     
     display: block;
     width: 100%;
@@ -125,7 +164,7 @@ header {
 
 #login input::placeholder {
     font-family: 'Overpass', sans-serif;
-    color: #E4E4E4;
+    color: #e4e4e4;
 }
 
 #login button {
@@ -140,14 +179,14 @@ header {
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
     
-    background-color: #dfcdc3;
+    background-color: #4f66b3;;
     
     margin-top: 10px;
 }
 
 #login button:hover {
-    background-color: #3c4245;
-    color:#dfcdc3;
+    background-color: #010608;
+    color:#020003;;
 }
 /* formulario de login */
 /* formulario de login */
@@ -172,7 +211,7 @@ header {
 
 .titulo {
     font-size: 300%;
-    color:#dfcdc3;
+    color:#0c0414;;
 }
 
 .logo-empresa img {
@@ -180,8 +219,8 @@ header {
 }
 
 hr {
-    border-top: 1px solid #8c8b8b;
-	border-bottom: 1px solid #dfcdc3;
+    border-top: 1px solid #0d021a;
+	border-bottom: 1px solid #0d021a;
     
 }
 .pie-form {
@@ -193,7 +232,7 @@ hr {
 .pie-form a {
     display: block;
     text-decoration: none;
-    color: #dfcdc3;
+    color: #0d021a;
     margin-bottom: 3px;
 }
 
@@ -214,7 +253,7 @@ hr {
         max-width: 900px;
         width: 90%;
 
-        background-color: #5f6769;
+        background-color: #082574;
 
         /*opacity: 0.50;
         filter: alpha(opacity=50);*/
@@ -223,9 +262,9 @@ hr {
         -moz-border-radius: 10px 10px 10px 10px;
         -webkit-border-radius: 10px 10px 10px 10px;
 
-        -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-        -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-        box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+        -webkit-box-shadow: 0px 0px 5px 5px rgba(26, 6, 44, 0.15);
+        -moz-box-shadow: 0px 0px 5px 5px rgba(26, 6, 44, 0.15);
+        box-shadow: 0px 0px 5px 5px rgba(26, 6, 44, 0.15);
 
         padding: 30px;
         box-sizing: border-box;
@@ -241,6 +280,13 @@ hr {
     
     #login label {
         text-align: left;
+    }
+   
+    #footer{
+        text-align: center;
+        color: gray;
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
 /* ajustar a pantallas con ancho menor o igual a 775px; */
