@@ -25,37 +25,41 @@
         </div>
     </header>
     <!-- <- CABECERA -->
-    <div class="content">
-        <h3 id="title_menu">
+    <main class="main">
+        <h3 class="main-title">
             ACTUALIZACION DE VEHICULO A LA BASE DE DATOS DEL SISTEMA
         </h3>
-        <div>
-            <label>BUSCAR</label>
-            <input type="text">
-            <input type="submit" value="ENTER">
+        <div class="container" >
+            <div class="container find">
+                <div class="find-input">
+                    <label>BUSCAR</label>
+                    <input type="text">
+                </div>
+                <input type="submit" value="ENTER">
+            </div>
+            <!-- Tabla -->
+            <table class="table">
+                <tr>
+                    <th>PLACA</th>
+                    <th>TIPO</th>
+                    <th>MODELO</th>
+                    <th>PUERTAS</th>
+                    <th>PUESTOS</th>
+                    <th>ACCION</th>
+                </tr>
+                <tr>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td><a href="update.html">ACTUALIZAR</a></td>
+                </tr>
+            </table>
         </div>
-        <!-- Tabla -->
-        <table class="table">
-            <tr class="header_table">
-                <th>PLACA</th>
-                <th>TIPO</th>
-                <th>MODELO</th>
-                <th>PUERTAS</th>
-                <th>PUESTOS</th>
-                <th>ACCION</th>
-            </tr>
-            <tr class="info_table">
-                <th>--</th>
-                <th>--</th>
-                <th>--</th>
-                <th>--</th>
-                <th>--</th>
-                <th><a href="#">ACTUALIZAR</a></th>
-            </tr>
-        </table>
-    </div>
+    </main>
     <footer class="footer">
-        <div>
+        <div class="container">
             Divi
         </div>
     </footer>

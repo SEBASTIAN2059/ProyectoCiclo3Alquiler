@@ -1,4 +1,4 @@
-/*-----RESOLUTION < 900px-----*//*FUNCIONAL*/
+/*-----RESOLUTION < 900px-----*//*FUNCIONAL*//*EN DESARROLLO*/
 @media (max-width:900px) {
     /*-----BODY->-----*/
     body{
@@ -63,69 +63,6 @@
     }
     /*-----<-HEADER-----*/
 }
-<<<<<<< HEAD
-header{
-    display: flex;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 100%;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    margin-bottom:20px;
-}
-#page_title{
-    font-size: 3em;
-    font-weight: bold;
-    width: 30%;
-    height: 15%;
-    text-align: center;
-}
-#options{
-    margin-left: 10%;
-    /*margin-right: 1%;*/
-    white-space: nowrap;
-    width: 50%;
-    height: 15%;
-    display: flex;
-}
-.item{
-    list-style: none;
-    margin-top: 2% ;
-}
-#a_user{
-    margin-left: 10%;
-}
-/*-----A-----*/
-
-.custom_a {
-    outline: none;
-    text-decoration: none;
-    padding: 2em 1em 2.4em 1em;
-  }
-  
-.custom_a:link {
-    color: white;
-}
-
-.custom_a:visited {
-    color: white;
-    background: #00b1b1;
-}
-
-.custom_a:focus {
-    border-bottom: 4px solid;
-    color: turquoise;
-}
-.custom_a:hover {
-    border-bottom: 4px solid;
-    color: turquoise;
-}
-  
-.custom_a:active {
-    /*background: linear-gradient(black 50%,turquoise);*/
-    background-color: rgb(0, 22, 20);
-    color: turquoise;
-=======
 /*-----RESOLUTION > 900px-----*//*FUNCIONAL*/
 @media (min-width:900px) {
     /*-----BODY->-----*/
@@ -190,5 +127,4 @@ header{
         border-bottom-right-radius: 10px;
     }
     /*-----<-HEADER-----*/
->>>>>>> e59bb4172886d7cf82c75728871084335ab5afd0
 }
