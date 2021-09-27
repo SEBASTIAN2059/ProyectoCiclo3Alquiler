@@ -1,0 +1,227 @@
+/*-----RESOLUTION < 900px-----*/ /*FUNCIONAL*/ /*EN DESARROLLO*/
+@media (max-width: 900px) {
+  /*-----BODY->-----*/
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /*-----<-BODY-----*/
+  /*-----HEADER->-----*/
+  .header {
+    background-color: black;
+    color: rgb(255, 255, 255);
+  }
+  .header a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+  }
+  .title {
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+  .title-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navigation ul li {
+    display: inline-block;
+  }
+  .navigation ul li a {
+    display: block;
+    transition: all 0.3s;
+    padding: 1rem;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    border-bottom: 4px solid black;
+  }
+  .navigation ul li #user {
+    margin-right: 0.5em;
+    margin-left: 2em;
+  }
+  .navigation ul li a:hover {
+    background-color: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*border-radius: 20px;*/
+  }
+  .navigation ul li a:focus {
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /*-----<-HEADER-----*/
+  /*-----MAIN-----*/
+
+  /*-----SELECT->-----*/
+  select {
+    font-size: 0.9rem;
+    padding: 0 2rem 0 1rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: black;
+  }
+  .custom_select {
+    border: 1px solid gray;
+    position: relative;
+    width: 13em;
+    height: 1.7em;
+  }
+  .custom_select:hover {
+    border: 1px solid black;
+    outline: 1px solid black;
+    position: relative;
+  }
+  .custom_arrow {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 2rem;
+    height: 92%;
+    pointer-events: none;
+  }
+  .custom_arrow::after {
+    --size_w: 0.4em;
+    --size_h: 0.7em;
+
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+  }
+  .custom_arrow::after {
+    border-left: var(--size_w) solid transparent;
+    border-right: var(--size_w) solid transparent;
+    border-top: var(--size_h) solid rgba(0, 170, 212, 0.5);
+  }
+  /*-----<-SELECT-----*/
+  /*-----INPUT->-----*/
+  .text_input {
+    font-size: 0.9rem;
+    background-color: white;
+    outline: none;
+    border: 1px solid gray;
+    width: 13em;
+    height: 1.7em;
+    color: black;
+  }
+  .text_input:hover {
+    background-color: white;
+    outline: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+  }
+
+  .text_input:focus {
+    outline: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+  }
+  /*-----<-INPUT-----*/
+}
+/*-----RESOLUTION > 900px-----*/ /*FUNCIONAL*/
+@media (min-width: 900px) {
+  /*-----BODY->-----*/
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /*-----<-BODY-----*/
+  /*-----HEADER->-----*/
+  .header {
+    background-color: black;
+    color: rgb(255, 255, 255);
+  }
+  .header a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+  }
+  .title {
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+  .title-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navigation ul li {
+    display: inline-block;
+  }
+  .navigation ul li a {
+    display: block;
+    transition: all 0.3s;
+    padding: 1rem;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    border-bottom: 4px solid black;
+  }
+  .navigation ul li #user {
+    margin-right: 0.5em;
+    margin-left: 2em;
+  }
+  .navigation ul li a:hover {
+    background-color: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*border-radius: 20px;*/
+  }
+  .navigation ul li a:focus {
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /*-----<-HEADER-----*/
+
+  /*-----<-FORMULARIO-----*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #e8e7e7;
+  }
+}
+
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2em;
+}
