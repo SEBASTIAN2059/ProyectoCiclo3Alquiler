@@ -225,3 +225,43 @@
   text-align: center;
   font-size: 2em;
 }
+.formulario {
+  background-color: rgb(255, 255, 255);
+}
+
+.formulario > * {
+  padding: 1em;
+}
+
+.columna-1 form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.columna-1 form {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+.select {
+  width: 100%;
+  padding: 1.5em;
+}
+
+.input {
+  width: 100%;
+  padding: 1.5em;
+}
+
+.registrar {
+  width: 30%;
+  padding: 1.7em;
+  background-color: #00bcca;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100%;
+}
+
