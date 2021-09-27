@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquilarte - Plantilla</title>
+  <link href="CSS/register.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- CABECERA -> -->
+  <header class="header">
+    <div class="container title-nav-container">
+      <a class="title">ALQUILARTE</a>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#" target="_self">INICIO</a></li>
+          <li><a href="#" target="_self">REGISTRO VEHICULO</a></li>
+          <li><a href="#" target="_self">ACTUALIZACION VEHICULO</a></li>
+          <li><a href="alquiler.html" target="_self">ALQUILER</a></li>
+          <li><a href="#" target="_self">DEVOLUCION</a></li>
+          <li><a id="user" href="#" target="_self">USUARIO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- <- CABECERA -->
+  <div class="formulario">
+    <h3 id="title_menu">
+      REGISTRO DE VEHICULO A LA BASE DE DATOS DEL SISTEMA
+    </h3>
+    <!--FORMULARIO DE REGISTRO-->
+    <form action="">
+      <div class="menu">
+        <div id="col_1">
+          <div class="spacing_top">Tipo de vehiculo</div>
+          <div class="custom_select">
+            <select name="vehicle_type">
+              <option value="None">Seleccione...</option>
+              <option value="Type_1">opcion 1</option>
+              <option value="Type_2">opcion 2</option>
+              <option value="Type_3">opcion 3</option>
+              <option value="Type_4">opcion 4</option>
+            </select>
+            <span class="custom_arrow"></span>
+          </div>
+          <div class="spacing_top">Puertas</div>
+          <div class="custom_select">
+            <select name="vehicle_doors">
+              <option value="None">Seleccione...</option>
+              <option value="Type_1">opcion 1</option>
+              <option value="Type_2">opcion 2</option>
+              <option value="Type_3">opcion 3</option>
+              <option value="Type_4">opcion 4</option>
+            </select>
+            <span class="custom_arrow"></span>
+          </div>
+          <div class="spacing_top">Puestos</div>
+          <div class="custom_select">
+            <select name="vehicle_seat">
+              <option value="None">Seleccione...</option>
+              <option value="Type_1">opcion 1</option>
+              <option value="Type_2">opcion 2</option>
+              <option value="Type_3">opcion 3</option>
+              <option value="Type_4">opcion 4</option>
+            </select>
+            <span class="custom_arrow"></span>
+          </div>
+        </div>
+        <div id="col_2">
+          <div class="spacing_top">Placa</div>
+          <input class="text_input" type="text">
+
+          <div class="spacing_top">Modelo</div>
+          <input class="text_input" type="text">
+
+          <div class="spacing_top"></div>
+          <input type="button" value="ACTUALIZAR">
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer class="footer">
+    Divi
+  </footer>
+</body>
+
+</html>
