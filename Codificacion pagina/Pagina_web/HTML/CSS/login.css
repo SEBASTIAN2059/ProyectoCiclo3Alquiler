@@ -145,7 +145,7 @@ body{
 #login input {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
-    color: #ebf0f3;
+    color: #0b0c0c;
     
     display: block;
     width: 100%;
@@ -164,7 +164,7 @@ body{
 
 #login input::placeholder {
     font-family: 'Overpass', sans-serif;
-    color: #e4e4e4;
+    color: #7e7575;
 }
 
 #login button {
