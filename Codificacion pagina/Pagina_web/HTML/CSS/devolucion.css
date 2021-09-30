@@ -1,70 +1,72 @@
-header{
-    display: flex;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 100%;
+body{
+    margin: 0;
+}
+/*-----HEADER->-----*/
+.header{
     background-color: black;
     color: rgb(255, 255, 255);
 }
-#page_title{
+.header a{
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+.title{
     font-size: 3em;
     font-weight: bold;
-    width: 30%;
-    height: 15%;
-    text-align: center;
+    padding-left: 1.0em;
+    padding-right: 0.5em;
 }
-#options{
-    margin-left: 10%;
-    /*margin-right: 1%;*/
-    white-space: nowrap;
-    width: 50%;
-    height: 15%;
+.title-nav-container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.item{
+.navigation ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
-    margin-top: 2% ;
 }
-#a_user{
-    margin-left: 10%;
+.navigation ul li{
+    display: inline-block;
 }
-/*-----A-----*/
-.custom_a {
-    outline: none;
-    text-decoration: none;
-    padding: 2em 1em 2.4em 1em;
-  }
-  
-.custom_a:link {
-    color: white;
+.navigation ul li a{
+    display: block;
+    transition: all 0.3s;
+    padding: 1rem;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    border-bottom: 4px solid black;
 }
-.custom_a:visited {
-    color: white;
-    background: #00b1b1;
+.navigation ul li #user{
+    margin-right: 0.5em;
+    margin-left: 2em;
 }
-.custom_a:focus {
+.navigation ul li a:hover{
+    background-color: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
     border-bottom: 4px solid;
-    color: turquoise;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*border-radius: 20px;*/
 }
-.custom_a:hover {
+.navigation ul li a:focus{
+    color: rgb(0, 188, 202);
     border-bottom: 4px solid;
-    color: turquoise;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-  
-.custom_a:active {
-    /*background: linear-gradient(black 50%,turquoise);*/
-    background-color: rgb(0, 22, 20);
-    color: turquoise;
-}
+/*-----<-HEADER-----*/
 #box{
-    margin: 50px;
+    margin: 0 auto;
+    margin-top: 1.5em;
     background-color: #C2CCBD;
     height: 800px;
     width: 85%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%) translateY(-50%);*/
     
 }
 #box_header{
@@ -74,20 +76,26 @@ header{
     width: 100%;
     text-align: center;
     color: black;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 #inputs{
-    position: absolute;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    /*position: absolute;*/
     background-color: #C2CCBD;
-    margin: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 20px auto;
+    /*left: 50%;
+    transform: translateX(-50%);*/
 
 }
 #boton{
+    margin: 0 auto;
     width: 100px;
     height: 50px;
-    position: absolute;
+    /*position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);*/
 }
