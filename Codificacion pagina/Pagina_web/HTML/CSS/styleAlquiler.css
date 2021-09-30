@@ -66,7 +66,16 @@
   }
   /*-----<-HEADER-----*/
 
-  /*-----SECTION->----*/
+  /*-----MAIN->----*/
+  .main {
+    background: rgb(235, 235, 235);
+    margin: 2em 3em auto;
+    padding-bottom: 1em;
+  }
+  .main-title {
+    text-align: center;
+    padding: 2em;
+  }
   /*-----FILTER->----*/
   #section-title {
     text-align: center;
@@ -120,19 +129,25 @@
   /*-----CATALOGO VEHICULOS->-----*/
   .card {
     width: 300px;
-    height: 600px;
+    height: 400px;
     border: 3px solid black;
-    padding: 0;
+    margin: 50px;
   }
   .card-header {
     background: #000000;
     color: #ffffff;
+    text-align: center;
+    padding: 0;
   }
   .card-header * {
     margin: 0;
   }
   .card-header p {
     font-style: italic;
+  }
+  .card-body * {
+    display: flex;
+    justify-content: center;
   }
   .card-body-img img {
     width: 200px;
