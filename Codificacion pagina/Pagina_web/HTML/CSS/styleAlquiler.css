@@ -3,116 +3,139 @@
   --color-negro: #000000;
   --color-gris: #707070;
 }
+/*-----RESOLUTION > 900px-----*/ /*FUNCIONAL*/
+@media (min-width: 900px) {
+  /*-----BODY->-----*/
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /*-----<-BODY-----*/
+  /*-----HEADER->-----*/
+  .header {
+    background: black;
+    color: rgb(255, 255, 255);
+  }
+  .header a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+  }
+  .title {
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+  .title-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navigation ul li {
+    display: inline-block;
+  }
+  .navigation ul li a {
+    display: block;
+    transition: all 0.3s;
+    padding: 2em 1em 2.5em;
+    border-bottom: 4px solid black;
+  }
+  .navigation ul li #user {
+    margin-right: 0.5em;
+    margin-left: 2em;
+  }
+  .navigation ul li a:hover {
+    background: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  /*Revisar el focus si está funcionando correctamente*/
+  .navigation ul li a:focus {
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /*-----<-HEADER-----*/
 
-body {
-  margin: 0 auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-/*Encabezado de la pagina web*/
-header {
-  display: flex;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  width: 100%;
-  background-color: black;
-  color: rgb(255, 255, 255);
-}
-#page_title {
-  font-size: 3em;
-  font-weight: bold;
-  width: 30%;
-  height: 15%;
-  text-align: center;
-}
+  /*-----SECTION->----*/
+  /*-----FILTER->----*/
+  #section-title {
+    text-align: center;
+  }
+  #catalogo {
+    display: flex;
+    justify-content: center;
+  }
+  .filtro {
+    border: 1px solid var(--color-gris);
+    padding: 1% 5%;
+    text-transform: uppercase;
+  }
+  .filtro.inicio {
+    color: turquoise;
+  }
+  .filtro.select {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  .custom_arrow {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 2rem;
+    height: 92%;
+    pointer-events: none;
+  }
+  .custom_arrow::after {
+    --size_w: 0.4em;
+    --size_h: 0.7em;
 
-#options {
-  margin-left: 10%;
-  white-space: nowrap;
-  width: 50%;
-  height: 15%;
-  display: flex;
-}
-.item {
-  list-style: none;
-  margin-top: 2%;
-}
-#a_user {
-  margin-left: 10%;
-}
-/*-----A-----*/
-.custom_a {
-  outline: none;
-  text-decoration: none;
-  padding: 2em 1em 2.4em 1em;
-}
-.custom_a:link {
-  color: white;
-}
-.custom_a:visited {
-  color: white;
-  background: #00b1b1;
-}
-.custom_a:hover {
-  border-bottom: 4px solid;
-  color: turquoise;
-}
-.custom_a:focus {
-  border-bottom: 4px solid;
-  color: turquoise;
-}
-.custom_a:active {
-  background: rgb(0, 22, 20);
-  color: turquoise;
-}
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+  }
+  .custom_arrow::after {
+    border-left: var(--size_w) solid transparent;
+    border-right: var(--size_w) solid transparent;
+    border-top: var(--size_h) solid rgba(0, 170, 212, 0.5);
+  }
 
-/*----SECTION----*/
-
-/*----FILTER----*/
-#section-title {
-  text-align: center;
-}
-#catalogo {
-  display: flex;
-  justify-content: center;
-}
-.filtro {
-  border: 1px solid var(--color-gris);
-  padding: 1% 5%;
-  text-transform: uppercase;
-}
-.filtro.inicio {
-  color:turquoise;
-}
-.filtro.select {
-  border: none;
-  width: 100%;
-  height: 100%; 
-  
-}
-.custom_arrow{
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  background-color:white;
-  width: 2rem;
-  height: 92%;
-  pointer-events: none;
-}
-.custom_arrow::after{
-  --size_w: 0.4em;
-  --size_h: 0.7em;
-
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -40%);
-}
-.custom_arrow::after{
-  border-left: var(--size_w) solid transparent;
-  border-right: var(--size_w) solid transparent;
-  border-top: var(--size_h) solid rgba(0, 170, 212, 0.5);
+  /*-----<-FILTRO-----*/
+  /*-----CATALOGO VEHICULOS->-----*/
+  .card {
+    width: 300px;
+    height: 600px;
+    border: 3px solid black;
+    padding: 0;
+  }
+  .card-header {
+    background: #000000;
+    color: #ffffff;
+  }
+  .card-header * {
+    margin: 0;
+  }
+  .card-header p {
+    font-style: italic;
+  }
+  .card-body-img img {
+    width: 200px;
+    height: 20 0px;
+  }
 }
