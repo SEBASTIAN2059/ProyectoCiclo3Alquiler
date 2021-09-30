@@ -1,0 +1,320 @@
+/* efectos por defecto */
+body{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/*Encabezado de la pagina web*/
+.header{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+.title{
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+}
+.title-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* efectos para el contenedor de pantalla completa */
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../Images/fondo_difuminado.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* contenedor del login a la izquierda */
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    
+    min-width: 380px;
+    max-width: 900px;
+    width: 90%;
+    
+    background-color: #5f6769;
+    
+    /*opacity: 0.50;
+    filter: alpha(opacity=50);*/
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    padding: 30px;
+    box-sizing: border-box;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    transition: all 0.3s;
+    padding: 1rem;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    border-bottom: 4px solid black;
+}
+.navigation ul li #user{
+    margin-right: 0.5em;
+    margin-left: 2em;
+}
+
+.navigation ul li a:hover{
+    background-color: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*border-radius: 20px;*/
+}
+.navigation ul li a:focus{
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(43, 23, 23);
+    font-size: 200%;
+    text-align: center;
+}
+
+.guardar{
+    width: 15%;
+    height: 30px;
+    /*background-color: aqua;*/
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    margin-top: auto;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    display: inline-block;
+}
+
+.cancelar{
+    width: 15%;
+    height: 30px;
+    /*background-color: aqua;*/
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    margin-top: auto;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    display: inline-block;
+}
+
+.form-register {
+    text-align: center;
+    background-color: rgb(207, 202, 238);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+.form-label {
+    width: 180px;
+    font-weight: bold;
+    height: 40px;
+    display: inline-block;
+    overflow: visible;
+}
+.label-nombre {
+    width: 180px;
+    height: 40px;
+    font-weight: bold;
+    display: inline-block;
+    overflow: visible;
+}
+
+.label-apellido {
+    width: 180px;
+    height: 40px;
+    font-weight: bold;
+    display: inline-block;
+    overflow: visible;
+}
+.label-documento {
+    width: 180px;
+    height: 60px;
+    font-weight: bold;
+    display: inline-block;
+    overflow: visible;
+}
+
+.label-telefono {
+    width: 180px;
+    height: 40px;
+    font-weight: bold;
+    display: inline-block;
+    overflow: visible;
+}
+
+.form-control{
+   border-radius: 5px;
+   background-color: beige;
+   width: 350px;
+   font-size: 15px;
+   font-family: Arial, Verdana;
+   padding-left: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.form-select{
+    width: 365px;
+    font-size: 15px;
+    font-family: Arial, Verdana;
+    border-radius: 5px;
+    background-color: beige;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(7, 7, 7);
+}
+
+.row{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.main{
+    background-color: rgb(235, 235, 235);
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-bottom: 1em;
+}
+/*-----MAIN-TITLE->-----*/
+.main .main-title{
+    text-align: center;
+    margin: 0;
+    padding: 2em;
+}
+/*-----<-MAIN-TITLE-----*/
+/*-----MAIN-CONTAINER->-----*/
+.main .container{
+    background-color: white;
+    margin: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+}
+/*-----<-MAIN-CONTAINER-----*/
+/*-----FIND->-----*/
+.main .container .find{
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 1em;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+.main .container .find .find-input{
+    display: flex;
+    width: 95%;
+}
+.main .container .find label{
+    font-weight: 600;
+}
+.main .container .find input[type="text"]{
+    margin: 0;
+    margin-left: 0.5em;
+    width: 90%;
+    height: 1.5em;
+    font-size: 1em;
+}
+.main .container .find input[type="submit"]{
+    margin: 0;
+    padding: 0.5em;
+    width: 6em;
+    transition: all 0.3s;
+    color: white;
+    background-color: rgb(0, 188, 202);
+    border: 2px solid rgb(0, 138, 148);
+}
+.main .container .find input[type="submit"]:hover{
+    background-color: rgb(0, 148, 158);
+}
+.main .container .find input[type="submit"]:active{
+    background-color: rgb(0, 100, 158);
+    color: cyan;
+}
+/*-----<-FIND-----*/
+/*-----TABLE->-----*/
+.main .container .table{
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 95%;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+.main .container .table th{
+    border: 1px solid gray;
+
+}
+.main .container .table td{
+    border-right: 1px solid gray;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+}
+.main .container .table td a{
+    text-decoration: none;
+    color: rgb(0, 188, 202);
+}
+
+.main .container .table td a:hover{
+    color: rgb(0, 37, 139);
+}
+
+.main .container .table td a:focus{
+    color: rgb(0, 158, 250);
+}
+
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+

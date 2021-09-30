@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquilarte - Plantilla</title>
+  
+  <script src="JS/usuario.js"></script> 
+  <link href="CSS/usuario.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <!-- CABECERA -> -->
+  <header class="header">
+    <div class="container title-nav-container">
+      <a class="title">ALQUILARTE</a>
+      <nav class="navigation">
+        <ul>
+          <li><a href="login.html" target="_self" onclick="salir()">INICIO</a></li>
+          <li><a href="register.html" target="_self">REGISTRO VEHICULO</a></li>
+          <li><a href="update_find.html" target="_self">ACTUALIZACION VEHICULO</a></li>
+          <li><a href="alquiler.html" target="_self">ALQUILER</a></li>
+          <li><a href="index.html" target="_self">DEVOLUCION</a></li>
+          <li><a id="user" href="usuario.html" target="_self">USUARIO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- <- CABECERA -->
+
+  <!-- <- FORMULARIO-->
+ 
+  <form class="form-register">
+    <h1 id="h1_1">Registrar Datos Del Usuario</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4">
+                <label class="label-nombre" for="nombre">Nombre Usuario:</label>
+                <input class="form-control" type="text" id="nombre" name="txtNombre" maxlength="500" 
+                        required placeholder="Digite Su Nombre"></input>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <label class="label-apellido" for="apellido">Apellido Usuario:</label>
+                <input class="form-control" type="text" id="apellido" name="txtApellido" maxlength="500" 
+                        required placeholder="Digite Su Apellido"></input>
+            </div>
+            <div class="col-12 col-md-8 col-xl-6">
+                <label class="form-label">Seleccione tipo de documento:</label>
+                <select class="form-select" aria-label=".form-select-lg example" id="tipodocumento" name="selVehiculo">
+                    <option value=1>Seleccione una opción</option>
+                    <option value=1>Registro Civil</option>
+                    <option value=2>Tarjeta De Indentidad</option>
+                    <option value=1>Cedula De Ciudadania</option>
+                    <option value=2>Cedula De Extranjeria</option>
+                    <option value=3>Pasaporte</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <label class="label-documento" for="documento">Numero De Documento:</label>
+                <input class="form-control" type="text" id="documento" name="txtDocumento" maxlength="10" 
+                        required placeholder="Digite Su Número De Documento"></input>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <label class="label-telefono">Numero de telefono:</label>
+                <input class="form-control" type="text" id="telefono" name = "Telefono" maxlength="10"
+                    required placeholder="Digite Su Número De Telefono"></input>
+            </div>  
+            <div class="col-12 col-md-6 col-xl-4">
+                <label class="form-label">Correo Electronico:</label>
+                <input class="form-control" type="email" name="Correo" size=200 placeholder="Correo electronico"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col12 col-md-6">
+                <button type="button" class="guardar btn-outline-danger" onclick="confirmar()">Guardar</button>
+            </div>
+            <div class="col12 col-md-6">
+                <button type="button" class="cancelar btn-outline-danger">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<main class="main">
+  <h3 class="main-title">
+      Listado De Usuarios Registrados
+  </h3>
+  <div class="container" >
+      <div class="container find">
+          <div class="find-input">
+              <label>BUSCAR</label>
+              <input type="text">
+          </div>
+          <input type="submit" value="ENTER">
+      </div>
+      <!-- Tabla -->
+      <table class="table">
+          <tr>
+              <th>Nombre De Usuario</th>
+              <th>Apellido De Ususario</th>
+              <th>Tipo De Documento</th>
+              <th>Número De Documento</th>
+              <th>Telefono Usuario</th>
+              <th>Correo Ususairo</th>
+          </tr>
+          <tr>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td><a href="usuario.html">ACTUALIZAR</a></td>
+          </tr>
+      </table>
+  </div>
+</main>
+  <!-- <- FORMULARIO-->
+
+
+  <!--FOOTER-->
+  <footer class="footer">
+    Realizado por equipo Divi Mision TIC 2022
+  </footer>
+</body>
+
+</html>
