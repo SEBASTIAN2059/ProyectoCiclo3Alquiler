@@ -15,14 +15,16 @@
         <nav class="navigation">
           <ul>
             <li><a href="login.html" target="_self">INICIO</a></li>
-            <li><a href="#" target="_self">REGISTRO VEHICULO</a></li>
+            <li>
+              <a href="register.html" target="_self">REGISTRO VEHICULO</a>
+            </li>
             <li>
               <a href="update_find.html" target="_self">
                 ACTUALIZACION VEHICULO
               </a>
             </li>
             <li><a href="alquiler.html" target="_self">ALQUILER</a></li>
-            <li><a href="#" target="_self">DEVOLUCION</a></li>
+            <li><a href="index.html" target="_self">DEVOLUCION</a></li>
             <li><a id="user" href="#" target="_self">USUARIO</a></li>
           </ul>
         </nav>
@@ -32,25 +34,65 @@
     <!--INICIO DE LA SECCION-->
 
     <main class="main">
-      <h3 class="main-title">CATALOGO DE VEHICULOS EN ALQUILER</h3>
+      <h3 class="main-title">CATÁLOGO DE VEHICULOS EN ALQUILER</h3>
 
       <!--FILTRO DEL CATALOGO-->
       <div id="catalogo">
         <div class="filtro inicio">Filtrar</div>
+
+        <div class="filtro placa">
+          <label for="filtro-placa">Placa</label>
+          <input type="text" name="" id="filtro-placa" />
+        </div>
+
         <div class="filtro tipo">
+          <label for="filtro-tipo">Tipo</label>
           <select name="filtro-tipo" id="filtro-tipo" class="filtro select">
-            <option selected>Placa</option>
-            <option value="1">opcion1</option>
-            <option value="2">opcion2</option>
-            <option value="3">opcion3</option>
-            <option value="4">opcion4</option>
-            <span class="custom_arrow"></span>
+            <option selected>Todos</option>
+            <option value="1">Hatchback</option>
+            <option value="2">Sedan</option>
+            <option value="3">Coupe</option>
+            <option value="4">SUV</option>
           </select>
         </div>
-        <div class="filtro marca">Tipo</div>
-        <div class="filtro modelo">Modelo</div>
-        <div class="filtro trans">Puertas</div>
-        <div class="filtro puestros">Puestos</div>
+        <div class="filtro modelo">
+          <label for="filtro-modelo">Modelo</label>
+          <select name="filtro-modelo" id="filtro-modelo" class="filtro select">
+            <option selected>Todos</option>
+            <option value="1">opcion 1</option>
+            <option value="2">opcion 2</option>
+            <option value="3">opcion 3</option>
+            <option value="4">opcion 4</option>
+          </select>
+        </div>
+        <div class="filtro puertas">
+          <label for="filtro-puertas">Puertas</label>
+          <select
+            name="filtro-puertas"
+            id="filtro-puertas"
+            class="filtro select"
+          >
+            <option selected>Seleccionar..</option>
+            <option value="1">2 puertas</option>
+            <option value="2">3 puertas</option>
+            <option value="3">4 puertas</option>
+            <option value="4">5 puertas</option>
+          </select>
+        </div>
+        <div class="filtro puestos">
+          <label for="filtro-puestos">puestos</label>
+          <select
+            name="filtro-puestos"
+            id="filtro-puestos"
+            class="filtro select"
+          >
+            <option selected>Seleccionar..</option>
+            <option value="1">2 puestos</option>
+            <option value="2">3 puestos</option>
+            <option value="3">4 puestos</option>
+            <option value="4">5 puestos</option>
+          </select>
+        </div>
       </div>
 
       <!--CATALOGO DE VEHICULOS-->
