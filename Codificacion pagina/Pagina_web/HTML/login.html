@@ -38,48 +38,49 @@
             <nav class="navigation">
                 <ul>
                     <li><a href="login.html" target="_self" >INICIO</a></li>
-                    <li ><a href="#" target="_self" >REGISTRO VEHICULO</a></li>
+                    <li ><a href="register.html" target="_self" >REGISTRO VEHICULO</a></li>
                     <li><a href="update_find.html" target="_self" >ACTUALIZACION VEHICULO</a></li>
                     <li><a href="alquiler.html" target="_self" >ALQUILER</a></li>
-                    <li><a href="#" target="_self" >DEVOLUCION</a></li>
-                    <li><a id="user" href="#" target="_self" >USUARIO</a></li>
+                    <li><a href="index.html" target="_self" >DEVOLUCION</a></li>
+                    <li><a id="user" href="usuario.html" target="_self" >USUARIO</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-        <div id="contenedor">
+
+        <main class="main">
+            <div id="contenedor">
             
-            <div id="contenedorcentrado">
-                <div id="login">
-                    <form id="loginform">
-                        <label for="usuario">Usuario</label>
-                        <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                <div id="contenedorcentrado">
+                    <div id="login">
+                        <form id="loginform">
+                            <label for="usuario">Usuario</label>
+                            <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                            
+                            <label for="password">Contraseña</label>
+                            <input id="password" type="password" placeholder="Contraseña" name="password" required>
+                            
+                            <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                        </form>
                         
-                        <label for="password">Contraseña</label>
-                        <input id="password" type="password" placeholder="Contraseña" name="password" required>
-                        
-                        <button type="submit" title="Ingresar" name="Ingresar">Login</button>
-                    </form>
-                    
-                </div>
-                <div id="derecho">
-                    <div class="titulo">
-                        Bienvenido
                     </div>
-                    <hr>
-                    <div class="pie-form">
-                        <a href="#">¿Perdiste tu contraseña?</a>
-                        <a href="#">¿No tienes Cuenta? Registrate</a>
+                    <div id="derecho">
+                        <div class="titulo">
+                            Bienvenido
+                        </div>
                         <hr>
-                        <a href="#">« Volver</a>
+                        <div class="pie-form">
+                            <a href="#">¿Perdiste tu contraseña?</a>
+                            <a href="#">¿No tienes Cuenta? Registrate</a>
+                            <hr>
+                            <a href="#">« Volver</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+          </main>
         <footer class="footer">
-              Realizado por equipo Divi Mision TIC 2022
-      </footer>
-        
+            Realizado por equipo Divi Mision TIC 2022
+        </footer> 
     </body>
 </html>
