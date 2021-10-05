@@ -122,7 +122,12 @@
     text-align: center;
   }
   .tf-filtrar {
-    color: var(--color-turq);
+    background: var(--color-turq);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .tf-filtrar:hover {
+    background: rgb(3, 253, 228);
   }
   .tf-select {
     width: 70%;
@@ -165,14 +170,17 @@
   .card-body-alquilar {
     background: var(--color-turq);
     color: #ffffff;
+    font-size: 0.9em;
     width: 40%;
     padding: 5px 10px;
     margin: auto;
     margin-top: 15px;
     border: none;
+    text-decoration: none;
   }
   .card-body-alquilar:hover {
     cursor: pointer;
     background: rgb(3, 253, 228);
   }
+  /*-----<-CATALOGO VEHICULOS-----*/
 }
