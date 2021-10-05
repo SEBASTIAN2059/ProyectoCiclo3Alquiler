@@ -34,11 +34,42 @@
     <!--SECCION-->
     <main class="main">
       <h3 class="main-title">DATOS DEL CLIENTE PARA ALQUILER</h3>
-      <form class="form-cliente">
-          <div class="col">
-              <label for="cliente-nombre">Nombre del cliente</label><br>
-              <input type="text" class="form-cliente" id="cliente-nombre"/>
+      <div class="container-form">
+        <form class="form-cliente">
+            <div class="datos-usuario">
+                <div class="input-cliente">
+                    <label for="cliente-nombre">Nombre del cliente</label><br>
+                    <input type="text" class="form-cliente" id="cliente-nombre" required/>
+                </div>
+                <div class="input-cliente">
+                  <label for="cliente-apellido">Apellido del cliente</label><br>
+                  <input type="text" class="form-cliente" id="cliente-apellido" required/>
+              </div>
+              <div class="input-cliente">
+                  <label for="cliente-tipoDoc">Tipo de documento</label><br>
+                  <input type="text" class="form-cliente" id="cliente-tipoDoc" required/>
+              </div>
+              <div class="input-cliente">
+                  <label for="cliente-numDoc">Numero de documento</label><br>
+                  <input type="text" class="form-cliente" id="cliente-numDoc" required/>
+              </div>
+              <div class="input-cliente">
+                  <label for="cliente-tel">Telefono</label><br>
+                  <input type="text" class="form-cliente" id="cliente-tel" required/>
+              </div>
+              <div class="input-cliente">
+                  <label for="cliente-email">Email</label><br>
+                  <input type="text" class="form-cliente" id="cliente-email" required/>
+              </div>
+            </div>
+            
+          <div class="form-btn">
+              <button class="btn-alquilar">Alquilar</button>
+              <button class="btn-cancelar">Cancelar</button>
+              <button class="btn-volver">Volver</button>
           </div>
-      </form>
+        </form>
+      </div>
+      
   </body>
 </html>

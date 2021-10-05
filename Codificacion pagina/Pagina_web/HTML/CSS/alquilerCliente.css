@@ -77,4 +77,26 @@
     text-align: center;
     padding: 2em;
   }
+  .container-form {
+    max-width: 800px;
+    width: 100%;
+    border: 2px solid #000000;
+    padding: 25px 30px;
+    margin: 0 auto;
+  }
+  .container-form form .datos-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  form .datos-usuario .input-cliente {
+    width: calc(100% / 2);
+  }
+  .datos-usuario .input-cliente input {
+    height: 20px;
+    width: 80%;
+  }
+  .datos-usuario .input-cliente input:hover {
+    border: 2px solid var(--color-turq);
+  }
 }
