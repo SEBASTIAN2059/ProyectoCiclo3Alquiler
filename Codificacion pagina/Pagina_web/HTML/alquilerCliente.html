@@ -47,7 +47,12 @@
               </div>
               <div class="input-cliente">
                   <label for="cliente-tipoDoc">Tipo de documento</label><br>
-                  <input type="text" class="form-cliente" id="cliente-tipoDoc" required/>
+                  <!--<input type="text" class="form-cliente" id="cliente-tipoDoc" required/>-->
+                  <select name="cliente-tipoDoc" id="cliente-tipoDoc" class="form-cliente">
+                      <option value="Type_1">Cedula de ciudadania</option>
+                      <option value="Type_2">Tarjeta de identidad</option>
+                      <option value="Type_3">Pasaporte</option>
+                  </select>
               </div>
               <div class="input-cliente">
                   <label for="cliente-numDoc">Numero de documento</label><br>
@@ -59,7 +64,7 @@
               </div>
               <div class="input-cliente">
                   <label for="cliente-email">Email</label><br>
-                  <input type="text" class="form-cliente" id="cliente-email" required/>
+                  <input type="email" class="form-cliente" id="cliente-email" required/>
               </div>
             </div>
             
