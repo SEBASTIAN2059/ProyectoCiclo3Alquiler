@@ -38,61 +38,67 @@
 
       <!--FILTRO DEL CATALOGO-->
       <div id="catalogo">
-        <div class="filtro inicio">Filtrar</div>
-
-        <div class="filtro placa">
-          <label for="filtro-placa">Placa</label>
-          <input type="text" name="" id="filtro-placa" />
-        </div>
-
-        <div class="filtro tipo">
-          <label for="filtro-tipo">Tipo</label>
-          <select name="filtro-tipo" id="filtro-tipo" class="filtro select">
-            <option selected>Todos</option>
-            <option value="1">Hatchback</option>
-            <option value="2">Sedan</option>
-            <option value="3">Coupe</option>
-            <option value="4">SUV</option>
-          </select>
-        </div>
-        <div class="filtro modelo">
-          <label for="filtro-modelo">Modelo</label>
-          <select name="filtro-modelo" id="filtro-modelo" class="filtro select">
-            <option selected>Todos</option>
-            <option value="1">opcion 1</option>
-            <option value="2">opcion 2</option>
-            <option value="3">opcion 3</option>
-            <option value="4">opcion 4</option>
-          </select>
-        </div>
-        <div class="filtro puertas">
-          <label for="filtro-puertas">Puertas</label>
-          <select
-            name="filtro-puertas"
-            id="filtro-puertas"
-            class="filtro select"
-          >
-            <option selected>Seleccionar..</option>
-            <option value="1">2 puertas</option>
-            <option value="2">3 puertas</option>
-            <option value="3">4 puertas</option>
-            <option value="4">5 puertas</option>
-          </select>
-        </div>
-        <div class="filtro puestos">
-          <label for="filtro-puestos">puestos</label>
-          <select
-            name="filtro-puestos"
-            id="filtro-puestos"
-            class="filtro select"
-          >
-            <option selected>Seleccionar..</option>
-            <option value="1">2 puestos</option>
-            <option value="2">3 puestos</option>
-            <option value="3">4 puestos</option>
-            <option value="4">5 puestos</option>
-          </select>
-        </div>
+        <table class="table-filtro">
+          <tr>
+            <th rowspan="2" class="tf-filtrar">Filtrar</th>
+            <th>Placa</th>
+            <th>Tipo</th>
+            <th>Modelo</th>
+            <th>Puertas</th>
+            <th>Puestos</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="" id="tf-placa" /></td>
+            <td>
+              <select name="filtro-tipo" id="tf-tipo" class="tf-select tipo">
+                <option selected>Todos</option>
+                <option value="1">Hatchback</option>
+                <option value="2">Sedan</option>
+                <option value="3">Coupe</option>
+                <option value="4">SUV</option>
+              </select>
+            </td>
+            <td>
+              <select
+                name="filtro-modelo"
+                id="tf-modelo"
+                class="tf-select modelo"
+              >
+                <option selected>Todos</option>
+                <option value="1">opcion 1</option>
+                <option value="2">opcion 2</option>
+                <option value="3">opcion 3</option>
+                <option value="4">opcion 4</option>
+              </select>
+            </td>
+            <td>
+              <select
+                name="filtro-puertas"
+                id="tf-puertas"
+                class="tf-select puertas"
+              >
+                <option selected>Seleccionar..</option>
+                <option value="1">2 puertas</option>
+                <option value="2">3 puertas</option>
+                <option value="3">4 puertas</option>
+                <option value="4">5 puertas</option>
+              </select>
+            </td>
+            <td>
+              <select
+                name="filtro-puestos"
+                id="tf-puertas"
+                class="tf-select puertas"
+              >
+                <option selected>Seleccionar..</option>
+                <option value="1">2 puestos</option>
+                <option value="2">3 puestos</option>
+                <option value="3">4 puestos</option>
+                <option value="4">5 puestos</option>
+              </select>
+            </td>
+          </tr>
+        </table>
       </div>
 
       <!--CATALOGO DE VEHICULOS-->

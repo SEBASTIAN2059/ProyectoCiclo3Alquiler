@@ -103,6 +103,32 @@
     border: 1px solid var(--color-gris);
   }
 
+  /*---TABLA DE CONTENIDO---*/
+  .table-filtro {
+    margin: 0;
+    width: 90%;
+    border-collapse: collapse;
+  }
+  .table-filtro th {
+    width: 15%;
+    padding: 8px 0;
+    border: 2px solid var(--color-gris);
+    text-transform: uppercase;
+  }
+  .table-filtro td {
+    padding: 8px 0;
+    border: 2px solid var(--color-gris);
+    align-items: center;
+    text-align: center;
+  }
+  .tf-filtrar {
+    color: var(--color-turq);
+  }
+  .tf-select {
+    width: 70%;
+    text-align: center;
+  }
+
   /*-----<-FILTRO-----*/
   /*-----CATALOGO VEHICULOS->-----*/
   .card {
