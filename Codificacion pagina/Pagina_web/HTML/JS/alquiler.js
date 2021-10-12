@@ -65,33 +65,3 @@ function filterTipo() {
 
 }
 
-//FILTER FOR TABLE SELECT ELEMENTS
-$('.tf-select tipo').change(function(){
-    filter_function();
-}
-);
-
-$('#table-catalogo tbody tr').show();
-
-function filter_function() {
-    $('#table-catalogo tbody tr').hide();
-
-    let tipoFlag = 0;
-    let tipoValue = $('#tf-tipo').val();
-    
-    $('#table-catalogo tr').each(function() {
-        
-        if (tipoValue == 0) {
-            tipoFlag = 1; //display
-        } else if (tipoValue == $(this).find('td.dt-tipo').data('dt-tipo')) {
-            tipoFlag = 1; //display
-        } else {
-            tipoFlag = 0;
-        }
-        
-        if (tipoFlag) {
-            $(this).show();
-        }
-    }
-    );
-}
