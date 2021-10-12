@@ -81,32 +81,12 @@
     padding: 2em;
   }
   /*-----FILTER->----*/
-  #section-title {
-    text-align: center;
-  }
+
   #filtro-catalogo {
     display: flex;
     justify-content: center;
   }
-  .filtro {
-    border: 1px solid var(--color-gris);
-    padding: 1% 2%;
-  }
-  .filtro label {
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .filtro.inicio {
-    color: turquoise;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .filtro.select {
-    background: inherit;
-    border: 1px solid var(--color-gris);
-  }
 
-  /*---TABLA DE FILTRO---*/
   .table-filtro {
     margin: 0;
     width: 90%;
