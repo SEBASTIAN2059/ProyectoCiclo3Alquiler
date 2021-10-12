@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alquilarte - alquiler</title>
     <link rel="stylesheet" href="CSS/styleAlquiler.css" />
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <!--ENCABEZADO-->
@@ -57,7 +59,12 @@
               />
             </td>
             <td>
-              <select name="filtro-tipo" id="tf-tipo" class="tf-select tipo">
+              <select
+                name="filtro-tipo"
+                id="tf-tipo"
+                class="tf-select tipo"
+                onkeyup="filtrarTipo()"
+              >
                 <option selected>Todos</option>
                 <option value="1">Hatchback</option>
                 <option value="2">Sedan</option>
@@ -111,38 +118,42 @@
       <!--CATALOGO DE VEHICULOS-->
       <div class="catalogo">
         <table class="tbl-catalogo" id="table-catalogo">
-          <tr class="tblrow-encabezado">
-            <th>Placa</th>
-            <th>Tipo</th>
-            <th>Modelo</th>
-            <th>Puertas</th>
-            <th>Puestos</th>
-            <th>Alquilar</th>
-          </tr>
-          <tr class="tblrow cont1">
-            <td>ktc123</td>
-            <td>Hatchback</td>
-            <td>CHEVROLET SPARK GT</td>
-            <td>5 puertas</td>
-            <td>5 puestos</td>
-            <td>
-              <a href="alquilerCliente.html" class="tblbtn-alquiler">
-                Alquilar
-              </a>
-            </td>
-          </tr>
-          <tr class="tblrow cont2">
-            <td>000000</td>
-            <td>none</td>
-            <td>none</td>
-            <td>none</td>
-            <td>none</td>
-            <td>
-              <a href="alquilerCliente.html" class="tblbtn-alquiler">
-                Alquilar
-              </a>
-            </td>
-          </tr>
+          <thead>
+            <tr class="tblrow-encabezado">
+              <th>Placa</th>
+              <th>Tipo</th>
+              <th>Modelo</th>
+              <th>Puertas</th>
+              <th>Puestos</th>
+              <th>Alquilar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tblrow cont1">
+              <td>ktc123</td>
+              <td>Hatchback</td>
+              <td>CHEVROLET SPARK GT</td>
+              <td>5 puertas</td>
+              <td>5 puestos</td>
+              <td>
+                <a href="alquilerCliente.html" class="tblbtn-alquiler">
+                  Alquilar
+                </a>
+              </td>
+            </tr>
+            <tr class="tblrow cont2">
+              <td>000000</td>
+              <td>none</td>
+              <td>none</td>
+              <td>none</td>
+              <td>none</td>
+              <td>
+                <a href="alquilerCliente.html" class="tblbtn-alquiler">
+                  Alquilar
+                </a>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </main>
