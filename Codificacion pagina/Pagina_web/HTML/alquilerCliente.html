@@ -39,32 +39,33 @@
             <div class="datos-usuario">
                 <div class="input-cliente">
                     <label for="cliente-nombre">Nombre del cliente</label><br>
-                    <input type="text" class="form-cliente" id="cliente-nombre" required/>
+                    <input type="text" class="form-cliente" id="cliente-nombre" placeholder="Nombre" required/>
                 </div>
                 <div class="input-cliente">
                   <label for="cliente-apellido">Apellido del cliente</label><br>
-                  <input type="text" class="form-cliente" id="cliente-apellido" required/>
+                  <input type="text" class="form-cliente" id="cliente-apellido" placeholder="Apellido" required/>
               </div>
               <div class="input-cliente">
                   <label for="cliente-tipoDoc">Tipo de documento</label><br>
                   <!--<input type="text" class="form-cliente" id="cliente-tipoDoc" required/>-->
-                  <select name="cliente-tipoDoc" id="cliente-tipoDoc" class="form-cliente">
-                      <option value="Type_1">Cedula de ciudadania</option>
-                      <option value="Type_2">Tarjeta de identidad</option>
-                      <option value="Type_3">Pasaporte</option>
+                  <select name="cliente-tipoDoc" id="cliente-tipoDoc" class="form-cliente" required>
+                    <option value="" disabled selected hidden>Seleccionar..</option>
+                    <option value="Type 0">Cedula de ciudadania</option>
+                    <option value="Type 1">Tarjeta de identidad</option>
+                    <option value="Type 2">Pasaporte</option>
                   </select>
               </div>
               <div class="input-cliente">
                   <label for="cliente-numDoc">Numero de documento</label><br>
-                  <input type="text" class="form-cliente" id="cliente-numDoc" required/>
+                  <input type="text" class="form-cliente" id="cliente-numDoc" placeholder="Numero Documento" required/>
               </div>
               <div class="input-cliente">
                   <label for="cliente-tel">Telefono</label><br>
-                  <input type="text" class="form-cliente" id="cliente-tel" required/>
+                  <input type="tel" class="form-cliente" id="cliente-tel" placeholder="Telefono" required/>
               </div>
               <div class="input-cliente">
-                  <label for="cliente-email">Email</label><br>
-                  <input type="email" class="form-cliente" id="cliente-email" required/>
+                  <label for="cliente-email">Email</label><br />
+                  <input type="email" class="form-cliente" id="cliente-email" placeholder="Email" required/>
               </div>
             </div>
             

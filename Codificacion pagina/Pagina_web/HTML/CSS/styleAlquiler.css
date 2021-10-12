@@ -164,12 +164,15 @@
     color: var(--color-blanco);
     text-transform: uppercase;
   }
-  .tbl-catalogo .tblbtn-alquiler {
+  .tblbtn-alquiler {
+    display: block;
     width: 70%;
-    padding: 5px;
+    margin: auto;
+    padding: 3px;
     border: none;
     background: var(--color-turq);
     color: var(--color-blanco);
+    text-decoration: none;
   }
   .tblbtn-alquiler:hover {
     background: var(--color-brightTruq);
