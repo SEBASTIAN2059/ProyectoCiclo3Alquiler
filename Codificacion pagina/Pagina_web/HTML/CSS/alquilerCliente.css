@@ -99,6 +99,10 @@
     width: calc(100% / 2);
     margin: 15px 0 10px 0;
   }
+  .datos-usuario .input-cliente .form-cliente:hover {
+    border: 2px solid var(--color-turq);
+    border-radius: 3px;
+  }
   .datos-usuario .input-cliente label {
     font-weight: 500;
   }
@@ -122,9 +126,5 @@
     outline: none;
     border: 2px solid var(--color-turq);
     border-radius: 3px;
-  }
-
-  .datos-usuario .input-cliente .form-cliente:hover {
-    border: 1px solid var(--color-turq);
   }
 }
