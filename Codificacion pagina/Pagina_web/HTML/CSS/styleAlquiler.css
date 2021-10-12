@@ -2,8 +2,10 @@
 :root {
   --color-negro: #000000;
   --color-gris: #707070;
+  --color-grisLight: #dfdfdf;
   --color-turq: rgb(0, 188, 202);
   --color-blanco: #ffffff;
+  --color-brightTruq: rgb(0, 238, 255);
 }
 /*-----RESOLUTION > 900px-----*/ /*FUNCIONAL*/
 @media (min-width: 900px) {
@@ -128,7 +130,7 @@
     cursor: pointer;
   }
   .tf-filtrar:hover {
-    background: rgb(3, 253, 228);
+    background: var(--color-brightTruq);
   }
   .tf-select,
   #tf-placa {
@@ -162,53 +164,20 @@
     color: var(--color-blanco);
     text-transform: uppercase;
   }
-
-  /*--Contenido anterior--*/
-  .card {
-    width: 225px;
-    height: 260px;
-    border: 3px solid black;
-    margin: 50px;
-  }
-  .card-header {
-    background: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 5px;
-  }
-  .card-header * {
-    margin: 0;
-  }
-  .card-header p {
-    font-style: italic;
-    font-size: 0.9em;
-  }
-  .card-body * {
-    display: flex;
-    justify-content: center;
-    margin-top: 6px;
-  }
-  .card-body-item {
-    background: #ffffff;
+  .tbl-catalogo .tblbtn-alquiler {
     width: 70%;
-    margin: auto;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-  .card-body-alquilar {
-    background: var(--color-turq);
-    color: #ffffff;
-    font-size: 0.9em;
-    width: 40%;
-    padding: 5px 10px;
-    margin: auto;
-    margin-top: 15px;
+    padding: 5px;
     border: none;
-    text-decoration: none;
+    background: var(--color-turq);
+    color: var(--color-blanco);
   }
-  .card-body-alquilar:hover {
-    cursor: pointer;
-    background: rgb(3, 253, 228);
+  .tblbtn-alquiler:hover {
+    background: var(--color-brightTruq);
+    font-weight: 600;
   }
+  tr.tblrow:hover {
+    background: var(--color-grisLight);
+  }
+
   /*-----<-CATALOGO VEHICULOS-----*/
 }
