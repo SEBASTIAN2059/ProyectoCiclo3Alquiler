@@ -48,7 +48,14 @@
             <th>Puestos</th>
           </tr>
           <tr>
-            <td><input type="text" name="" id="tf-placa" /></td>
+            <td>
+              <input
+                type="text"
+                name=""
+                id="tf-placa"
+                onkeyup="filtrarPlaca()"
+              />
+            </td>
             <td>
               <select name="filtro-tipo" id="tf-tipo" class="tf-select tipo">
                 <option selected>Todos</option>
@@ -151,5 +158,8 @@
       <div class="line"></div>
       <div class="container team">Equipo Divi</div>
     </footer>
+
+    <!--SCRIPT OF JS-->
+    <script src="js/alquiler.js"></script>
   </body>
 </html>

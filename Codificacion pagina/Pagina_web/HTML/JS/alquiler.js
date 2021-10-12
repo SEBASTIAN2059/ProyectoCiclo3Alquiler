@@ -1,6 +1,6 @@
 //ARHIVO JS PARA LA PAGINA WEB alquiler.html
 
-function filtrar() {
+function filtrarPlaca() {
     let inputFiltro = document.getElementById("tf-placa");
     let filter = inputFiltro.value.toUpperCase();
     let table = document.getElementById("table-catalogo");
@@ -13,7 +13,9 @@ function filtrar() {
         if (td) {
             contValue = td.innerText;
             if (contValue.toUpperCase().indexOf(filter)>-1) {
-                tr[i]
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
             }
         }
     }
