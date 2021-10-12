@@ -3,6 +3,7 @@
   --color-negro: #000000;
   --color-gris: #707070;
   --color-turq: rgb(0, 188, 202);
+  --color-blanco: #ffffff;
 }
 /*-----RESOLUTION > 900px-----*/ /*FUNCIONAL*/
 @media (min-width: 900px) {
@@ -81,7 +82,7 @@
   #section-title {
     text-align: center;
   }
-  #catalogo {
+  #filtro-catalogo {
     display: flex;
     justify-content: center;
   }
@@ -103,7 +104,7 @@
     border: 1px solid var(--color-gris);
   }
 
-  /*---TABLA DE CONTENIDO---*/
+  /*---TABLA DE FILTRO---*/
   .table-filtro {
     margin: 0;
     width: 90%;
@@ -129,13 +130,40 @@
   .tf-filtrar:hover {
     background: rgb(3, 253, 228);
   }
-  .tf-select {
+  .tf-select,
+  #tf-placa {
     width: 70%;
     text-align: center;
   }
 
   /*-----<-FILTRO-----*/
   /*-----CATALOGO VEHICULOS->-----*/
+  div.catalogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  table.tbl-catalogo {
+    border-collapse: collapse;
+    width: 90%;
+  }
+
+  table.tbl-catalogo,
+  .tbl-catalogo th,
+  .tbl-catalogo td {
+    border: 1px solid var(--color-gris);
+    padding: 8px;
+    text-align: center;
+  }
+  .tbl-catalogo th {
+    width: 15%;
+    background: var(--color-negro);
+    color: var(--color-blanco);
+    text-transform: uppercase;
+  }
+
+  /*--Contenido anterior--*/
   .card {
     width: 225px;
     height: 260px;
