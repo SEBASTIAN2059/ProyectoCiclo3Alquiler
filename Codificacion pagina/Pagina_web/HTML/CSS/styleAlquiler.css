@@ -86,7 +86,6 @@
     display: flex;
     justify-content: center;
   }
-
   .table-filtro {
     margin: 0;
     width: 90%;
@@ -104,9 +103,15 @@
     align-items: center;
     text-align: center;
   }
-  .tf-filtrar {
+  button.tf-filtrar {
+    text-transform: uppercase;
+    font-weight: 900;
     background: var(--color-turq);
     color: #ffffff;
+    width: 70%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
   }
   .tf-filtrar:hover {
