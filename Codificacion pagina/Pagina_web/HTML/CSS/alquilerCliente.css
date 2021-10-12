@@ -80,6 +80,7 @@
     text-align: center;
     padding: 2em;
   }
+  /*-----FORM CONTENT->-----*/
   .container-form {
     max-width: 800px;
     width: 100%;
@@ -127,4 +128,43 @@
     border: 2px solid var(--color-turq);
     border-radius: 3px;
   }
+
+  /*-----<-FORM CONTENT-----*/
+  /*-----FORM BUTTONS->-----*/
+  .form-btn button {
+    width: 15%;
+    padding: 7px;
+    margin: 0 8px;
+    font-size: 0.9em;
+    outline: none;
+    background: var(--color-turq);
+    color: var(--color-blanco);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .form-btn button:hover {
+    background: var(--color-brightTruq);
+    font-weight: 600;
+  }
+
+  .form-btn a {
+    display: inline-block;
+    width: 15%;
+    margin: 0 8px;
+    padding: 5px;
+    font-size: 0.9em;
+    background: var(--color-turq);
+    color: var(--color-blanco);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .form-btn a:hover {
+    background: var(--color-brightTruq);
+    font-weight: 600;
+  }
+  /*-----<-FORM BUTTONS-----*/
 }
