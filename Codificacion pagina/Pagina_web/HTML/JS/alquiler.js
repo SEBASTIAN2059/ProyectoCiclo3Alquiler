@@ -30,10 +30,10 @@ function selectFilter() {
     let optionModel = selectModel.options[selectModel.selectedIndex].value;
     
     let selectPuertas = document.getElementById('tf-puertas');
-    let optionPuertas = selectPuertas.options[selectPuertas.selectedIndex].value.toUpperCase();
+    let optionPuertas = selectPuertas.options[selectPuertas.selectedIndex].value;
 
     let selectPuestos = document.getElementById('tf-puestos');
-    let optionPuestos = selectPuestos.options[selectPuestos.selectedIndex].value.toUpperCase();
+    let optionPuestos = selectPuestos.options[selectPuestos.selectedIndex].value;
 
     let table = document.getElementById("table-catalogo"); //obtiene la tabla de datos
     let tr = table.getElementsByTagName("tr"); //toma las rows de la tabla seleccionada
@@ -61,8 +61,8 @@ function selectFilter() {
         
         if (tipoValue.toUpperCase().indexOf(optionTipo) > -1 ||
             modelValue.indexOf(optionModel) > -1 ||
-            puertasValue.toUpperCase().indexOf(optionPuertas) > -1 ||
-            puestosValue.toUpperCase().indexOf(optionPuestos) > -1) {
+            puertasValue.indexOf(optionPuertas) > -1 ||
+            puestosValue.indexOf(optionPuestos) > -1) {
            tr[i].style.display = ""; //si coincide la busqueda entonces muestre toda la linea de la tabla
         } else {
            tr[i].style.display = "none"; //si no coincide, no muestra la row
