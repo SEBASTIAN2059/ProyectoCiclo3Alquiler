@@ -63,7 +63,7 @@
                 class="tf-select tipo"
                 onChange="selectFilter()"
               >
-                <option selected value="0">Todos</option>
+                <option value="noValue" selected>Todos</option>
                 <option value="Hatchback">Hatchback</option>
                 <option value="Sedan">Sedan</option>
                 <option value="Coupe">Coupe</option>
@@ -77,7 +77,7 @@
                 class="tf-select modelo"
                 onChange="selectFilter()"
               >
-                <option value="0" selected>Todos</option>
+                <option value="noValue" selected>Todos</option>
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>
                 <option value="2019">2019</option>
@@ -92,7 +92,7 @@
                 class="tf-select puertas"
                 onChange="selectFilter()"
               >
-                <option value="0" selected>Seleccionar..</option>
+                <option value="noValue" selected>Seleccionar..</option>
                 <option value="1 puertas">1 puertas</option>
                 <option value="2 puertas">2 puertas</option>
                 <option value="3 puertas">3 puertas</option>
@@ -103,10 +103,11 @@
             <td>
               <select
                 name="filtro-puestos"
-                id="tf-puertas"
+                id="tf-puestos"
                 class="tf-select puertas"
+                onChange="selectFilter()"
               >
-                <option value="0" selected>Seleccionar..</option>
+                <option value="noValue" selected>Seleccionar..</option>
                 <option value="1 puestos">1 puestos</option>
                 <option value="2 puestos">2 puestos</option>
                 <option value="3 puestos">3 puestos</option>
@@ -149,7 +150,7 @@
               <td>Sedan</td>
               <td>2019</td>
               <td>4 puertas</td>
-              <td>none</td>
+              <td>5 puestos</td>
               <td>
                 <a href="alquilerCliente.html" class="tblbtn-alquiler">
                   Alquilar
