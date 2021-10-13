@@ -24,13 +24,13 @@ function filtrarPlaca() {
 //FUNCION PARA EL FILTRO TIPO
 function selectFilter() {
     let selectTipo = document.getElementById('tf-tipo'); //Selecciona el elemento select
-    let optionTipo = selectTipo.options[selectTipo.selectedIndex].text.toUpperCase(); //obtiene el value de la opcion select
+    let optionTipo = selectTipo.options[selectTipo.selectedIndex].value.toUpperCase(); //obtiene el value de la opcion select
     
     let selectModel = document.getElementById('tf-modelo');
-    let optionModel = selectModel.options[selectModel.selectedIndex].text.toUpperCase();
+    let optionModel = selectModel.options[selectModel.selectedIndex].value.toUpperCase();
     
     let selectPuertas = document.getElementById('tf-puertas');
-    let optionPuertas = selectPuertas.options[selectPuertas.selectedIndex].text.toUpperCase();
+    let optionPuertas = selectPuertas.options[selectPuertas.selectedIndex].value.toUpperCase();
 
     let table = document.getElementById("table-catalogo"); //obtiene la tabla de datos
     let tr = table.getElementsByTagName("tr"); //toma las rows de la tabla seleccionada
@@ -53,12 +53,14 @@ function selectFilter() {
 
         //indexOf busca en elemento en un array y retorna su primer indice
         //si no lo encuentra, retorna -1
-        if (tipoValue.toUpperCase().indexOf(optionTipo) > -1) {
+        if (tipoValue.toUpperCase().indexOf(optionTipo) > -1 ||
+            modelValue.toUpperCase().indexOf(optionModel) > -1 ||
+            puertasValue.toUpperCase().indexOf(optionPuertas) > -1) {
           tr[i].style.display = ""; //si coincide la busqueda entonces muestre toda la linea de la tabla
-        }
-        if (puertasValue.toUpperCase().indexOf(optionPuertas) > -1) {
+        } /*else if (puertasValue.toUpperCase().indexOf(optionPuertas) > -1) {
             tr[i].style.display = "";
-        } else {
+        } */ 
+        else {
           tr[i].style.display = "none"; //si no coincide, no muestra la row
         }
       }
