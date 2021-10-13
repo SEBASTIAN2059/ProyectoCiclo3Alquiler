@@ -20,48 +20,48 @@ function filtrarPlaca() {
         }
     }
 } //end function filtrarPlaca()
-/*
-function filtrarTipo() {
-    let selectFilter = document.getElementById("tf-tipo");
-    let optionFilter = selectFilter.getElementsByTagName("option");
-    let filter = optionFilter.value.toUpperCase();
-    let table = document.getElementById("table-catalogo");
-    let tr = table.getElementsByTagName("tr");
-    let td;
-    let contValue;
-    let i;
-    for (i=0; i<tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[1]; //column 1 refers to TIPO
-        if (td) {
-            contValue = td.innerText;
-            if (contValue.toUpperCase().indexOf(filter)>-1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }
-    }
-} //end function filtrarTipo()*/
 
-function filterTipo() {
-    let selectFilter = document.getElementById("tf-tipo");
-    let opFilter = selectFilter.value.toUpperCase();
-    let table = document.getElementById("table-catalogo");
-    let tr = table.getElementsByTagName("tr");
-    let td;
-    let tipoValue;
-    let i;
-    for (i=0; i<tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[1];
-        if (td) {
-            tipoValue = td.innerText;
-            if (tipoValue.toUpperCase().indexOf(opFilter)>-1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }
-    }
+//FUNCION PARA EL FILTRO TIPO
+function selectFilter() {
+    let selectTipo = document.getElementById('tf-tipo'); //Selecciona el elemento select
+    let optionTipo = selectTipo.options[selectTipo.selectedIndex].text.toUpperCase(); //obtiene el value de la opcion select
+    
+    let selectModel = document.getElementById('tf-modelo');
+    let optionModel = selectModel.options[selectModel.selectedIndex].text.toUpperCase();
+    
+    let selectPuertas = document.getElementById('tf-puertas');
+    let optionPuertas = selectPuertas.options[selectPuertas.selectedIndex].text.toUpperCase();
 
+    let table = document.getElementById("table-catalogo"); //obtiene la tabla de datos
+    let tr = table.getElementsByTagName("tr"); //toma las rows de la tabla seleccionada
+    //definicion de variables para el loop:
+    let tdTipo, tdModel, tdPuertas;
+    let tipoValue, modelValue, puertasValue;
+    let i; 
+    //loop que recorrera las rows
+    for (i = 0; i < tr.length; i++) {
+      tdTipo = tr[i].getElementsByTagName("td")[1]; //obtiene el valor del td de la respectiva row, en la columna 1
+      tdModel = tr[i].getElementsByTagName("td")[2];
+      tdPuertas = tr[i].getElementsByTagName("td")[3];
+      //si el td existe entonces obtiene su valor interno o texto
+      if (tdTipo || tdModel || tdPuertas) {
+        tipoValue = tdTipo.innerText; //obtiene el texto del td
+        modelValue = tdModel.innerText;
+        puertasValue = tdPuertas.innerText;
+        
+        //console.log(tipoValue);
+
+        //indexOf busca en elemento en un array y retorna su primer indice
+        //si no lo encuentra, retorna -1
+        if (tipoValue.toUpperCase().indexOf(optionTipo) > -1) {
+          tr[i].style.display = ""; //si coincide la busqueda entonces muestre toda la linea de la tabla
+        }
+        if (puertasValue.toUpperCase().indexOf(optionPuertas) > -1) {
+            tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none"; //si no coincide, no muestra la row
+        }
+      }
+    }
 }
 

@@ -61,7 +61,7 @@
                 name="filtro-tipo"
                 id="tf-tipo"
                 class="tf-select tipo"
-                onselect="filterTipo()"
+                onChange="selectFilter()"
               >
                 <option selected value="0">Todos</option>
                 <option value="Hatchback">Hatchback</option>
@@ -75,6 +75,7 @@
                 name="filtro-modelo"
                 id="tf-modelo"
                 class="tf-select modelo"
+                onChange="selectFilter()"
               >
                 <option selected>Todos</option>
                 <option value="1">opcion 1</option>
@@ -88,6 +89,7 @@
                 name="filtro-puertas"
                 id="tf-puertas"
                 class="tf-select puertas"
+                onChange="selectFilter()"
               >
                 <option selected>Seleccionar..</option>
                 <option value="1">2 puertas</option>
